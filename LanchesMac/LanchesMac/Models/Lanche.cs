@@ -25,11 +25,11 @@ namespace LanchesMac.Models
         [Display(Name = "Descrição detalhada do Lanche")]
         [MinLength(20, ErrorMessage = "Descrição detalhada deve ter no mínimo {1} caracter")]
         [MaxLength(200, ErrorMessage = "Descrição detalhada pode exceder {1} carater")]
-        public string DescricaoLonga { get; set; }
+        public string DescricaoDetalhada { get; set; }
 
         [Required(ErrorMessage = "Informe o preço do lanche")]
         [Display(Name = "Preço")]
-        [Column(TypeName = "decimal(10,2")]
+        [Column(TypeName = "decimal(10,2)")]
         [Range(1, 999.99, ErrorMessage = "O preço deve estar entre 1 e 999,99")]
         public decimal Preco { get; set; }
 
